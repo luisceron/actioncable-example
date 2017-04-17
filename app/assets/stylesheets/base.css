@@ -1,0 +1,18 @@
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#menu ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+#menu ul li a { 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.notice-text { color: blue; }
+.alert-text { color: red; }

@@ -1,0 +1,12 @@
+<%= render 'layouts/notification_errors', model: @user %>
+
+<h3>Sign up</h3>
+<div>
+  <%= form_for(@user, url: signup_path) do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.submit "Sign up" %>
+  <% end %>
+</div>
+
+<%= link_to "Back", root_path %>

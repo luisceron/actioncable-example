@@ -1,0 +1,7 @@
+<%= form_for(chatroom) do |f| %>
+  <%= render 'layouts/notification_errors', model: chatroom %>
+
+  <%= f.label :topic %>
+  <%= f.text_field :topic %>
+  <%= f.submit %>
+<% end %>

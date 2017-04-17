@@ -1,0 +1,12 @@
+<%= render 'layouts/notification_errors', model: @user %>
+
+<h3>Log in</h3>
+<div>
+  <%= form_for(@user, url: login_path) do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <%= f.submit "Log in" %>
+  <% end %>
+</div>
+
+<%= link_to "Back", root_path %>
